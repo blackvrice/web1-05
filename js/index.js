@@ -30,10 +30,6 @@ document.querySelectorAll('.search').forEach((element) => {
     });
 })
 
-document.querySelectorAll('.swiper-wrapper').forEach((element) => {
-    let slideLength = element.querySelectorAll('swiper-slide').length
-})
-
 document.querySelector('.this-year').textContent = new Date().getFullYear()
 
 const spyEl = document.querySelectorAll('section.scroll-spy')
@@ -81,22 +77,22 @@ new Swiper('.awards .swiper-container', {
 })
 
 
-const promotionEl = document.querySelector('.promotion')
-const promotionToggleBtn = document.querySelector('.toggle-promotion')
+const promotion = document.querySelector('.promotion')
+const promotionToggle = document.querySelector('.toggle-promotion')
 let isHidePromotion = false
-promotionToggleBtn.addEventListener('click', function () {
+promotionToggle.addEventListener('click', function () {
     isHidePromotion = !isHidePromotion
     if (isHidePromotion) {
-        promotionEl.classList.add('hide')
+        promotion.classList.add('hide')
     } else {
-        promotionEl.classList.remove('hide')
+        promotion.classList.remove('hide')
     }
 })
 
 function random(min, max) {
     return parseFloat((Math.random() * (max - min) + min).toFixed(2))
 }
-// 부유하는(떠 다니는) 요소를 만드는 함수
+
 function floatingObject(selector, delay, size) {
     gsap.to(
         selector,
