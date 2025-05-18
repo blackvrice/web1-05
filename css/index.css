@@ -1,4 +1,4 @@
-/*COMMON*/
+
 body {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
@@ -12,18 +12,15 @@ a {
 }
 
 img {
-  /* img(인라인 요소) 하단에 Baseline 공백을 제거 */
   display: block;
 }
 
-/*INNER*/
 .inner {
   width: 1100px;
   margin: 0 auto;
   position: relative;
 }
 
-/*BUTTON*/
 .btn {
   width: 130px;
   padding: 10px;
@@ -84,7 +81,6 @@ img {
   background-color: #FFF;
 }
 
-/*BACK TO POSITION*/
 .back-to-position {
   opacity: 0;
   transition: 1s;
@@ -120,7 +116,6 @@ img {
 }
 
 
-/*HEADER*/
 header {
   width: 100%;
   position: fixed;
@@ -300,7 +295,7 @@ header .main-menu .item .item__contents .contents__texture p {
   margin: 4px 0 14px;
 }
 
-/*BADGES*/
+
 header .badges {
   position: absolute;
   top: 132px;
@@ -316,7 +311,7 @@ header .badges .badge {
 }
 
 
-/*VISUAL*/
+
 .visual {
   margin-top: 120px;
   background-image: url("../images/visual_bg.jpg");
@@ -375,7 +370,7 @@ header .badges .badge {
 }
 
 
-/*NOTICE*/
+
 /*NOTICE LINE*/
 .notice .notice-line {
   position: relative;
@@ -474,7 +469,7 @@ header .badges .badge {
   font-size: 30px;
 }
 
-/*PROMOTION*/
+
 .notice .promotion {
   /*width: auto;*/
   height: 693px;
@@ -577,7 +572,7 @@ header .badges .badge {
 }
 
 
-/*REWARDS*/
+
 .rewards {
   position: relative;
 }
@@ -888,7 +883,7 @@ header .badges .badge {
 }
 
 
-/*AWARDS*/
+
 .awards {
   background-color: #272727;
 }
@@ -937,7 +932,7 @@ header .badges .badge {
 }
 
 
-/*FOOTER*/
+
 footer {
   background-color: #272727;
   border-top: 1px solid #333;
