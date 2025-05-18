@@ -9,12 +9,11 @@ document.querySelector('.toggle-promotion').addEventListener('click', (ev) => {
     else document.querySelector('.promotion').classList.add('hide')
 })
 
-document.querySelectorAll('.swiper-prev').forEach(
-    (element, index) => {
-        element.addEventListener('click', (ev) => {
-            element.parentElement.querySelector('.swiper-wrapper').style.transform = 'translateX(-50%)'
-        })
+document.querySelectorAll('.swiper-prev').forEach((element, index) => {
+    element.addEventListener('click', (ev) => {
+        element.parentElement.querySelector('.swiper-wrapper').style.transform = 'translateX(-50%)'
     })
+})
 
 document.querySelectorAll('.search').forEach((element) => {
     const input = element.querySelector("input");
@@ -34,20 +33,10 @@ document.querySelector('.this-year').textContent = new Date().getFullYear()
 
 const spyEl = document.querySelectorAll('section.scroll-spy')
 spyEl.forEach((element) => {
-    new ScrollMagic
-        .Scene({
-            triggerElement: spyEl,
-            triggerHook: .8
-        })
-        .setClassToggle(spyEl, 'show')
-        .addTo(new ScrollMagic.Controller())
+    new ScrollMagic.Scene({ triggerElement: spyEl, triggerHook: .8 }).setClassToggle(spyEl, 'show').addTo(new ScrollMagic.Controller())
 });
 
-new Swiper('.notice-line .swiper-container', {
-    direction: 'vertical',
-    autoplay: true,
-    loop: true
-})
+new Swiper('.notice-line .swiper-container', { direction: 'vertical', autoplay: true, loop: true})
 new Swiper('.promotion .swiper-container', {
     autoplay: {
         delay: 5000
